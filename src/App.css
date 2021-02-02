@@ -1,38 +1,85 @@
+/*------------------------------------------------------*/
+/*-------------------------GLOBAL RULES-----------------*/
+/*------------------------------------------------------*/
 .App {
-  text-align: center;
+  font-family: "Montserrat", sans-serif;
 }
+/*------------------------------------------------------*/
+/*-------------------------HEADER-----------------------*/
+/*------------------------------------------------------*/
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+/*------------------------------------------------------*/
+/*-------------------------SECTION----------------------*/
+/*------------------------------------------------------*/
+.section {
+  width: 580px;
+  /* height: 111px; */
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.section .programme {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e5e5e5;
+}
+.section .programme .time {
+  /* flex: 1; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.section .programme .time p {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.section .programme .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 90px;
+}
+.section .programme .description {
+  margin-left: 10px;
+}
+
+.section .programme .description h1 {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.section .programme .description h2 {
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+.section .programme .description div {
+  display: flex;
+}
+.section .programme .description div p {
+  font-weight: bold;
+  font-size: 12px;
+}
+.section .programme .description div p:first-child {
+  margin-right: 20px;
+}
+.section .programme .description div p:last-child {
+  color: #ff014b;
 }
